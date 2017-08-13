@@ -194,10 +194,23 @@ $(document).ready(function () {
 <h3><code>R markdown -&gt; html -&gt; add some comments</code></h3>
 <p><br> <img src="demo.png" /> <br></p>
 <p>This site contains a demonstration of html rendered <a href="http://rmarkdown.rstudio.com/">R markdown</a> (.Rmd) files which you can add comments to in the browser!</p>
-<p>Only one line added to the bottom of your .Rmd file is needed to add commenting functionality. Try it out with the <a href="minimal.html">minimal example</a>.</p>
+<p>Only one line added to the bottom of your .Rmd file is needed to add commenting functionality. You can simply copy and paste the following snippet into your own blank .Rmd file (e.g. foo.Rmd):</p>
+<pre><code>---
+output: html_document
+---
+
+## Insert your R markdown content here
+
+## The following line from https://github.com/hypothesis/client adds commenting functionality
+&lt;script src=&quot;https://hypothes.is/embed.js&quot; async&gt;&lt;/script&gt;
+</code></pre>
+<p>Then render from .Rmd to html with</p>
+<pre><code>library(rmarkdown)
+rmarkdown::render(&quot;foo.Rmd&quot;)</code></pre>
+<p>Try it out with the <a href="minimal.html">minimal example</a>.</p>
 <p>Or check out the slightly bigger <a href="annotator_demo.html">Annotator</a> and <a href="hypothesis_demo.html">Hypothesis</a> demo pages.</p>
 <p>The Annotator demo page uses <a href="http://annotatorjs.org/">annotator js</a>. It doesn’t save annotations but shows one way the contents of an annotation can be extracted using javascript.</p>
-<p>The minimal example and the hypothesis demo both use the <a href="https://github.com/hypothesis/client">hypothesis client</a>. By default comments are publicly stored but these demo pages don’t yet contain a way to extract annotation contents directly.</p>
+<p>The minimal example and the hypothesis demo both use the <a href="https://github.com/hypothesis/client">hypothesis client</a>. An account is required to add comments, which are public by default. These demo pages also don’t yet contain a way to extract annotation contents directly.</p>
 <p>Source files available at <a href="https://github.com/markdly/reviewr" class="uri">https://github.com/markdly/reviewr</a>.</p>
 </div>
 </div>
