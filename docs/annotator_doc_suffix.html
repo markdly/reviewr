@@ -1,0 +1,9 @@
+</div>
+<script src="annotator-full.min.js"></script>
+<script>
+jQuery(function ($) {
+    $('#mycontent').annotator();
+	myedit = $("#mycontent").data('annotator');
+	remarkdown = myedit.viewer.annotations[0];
+});
+</script>

@@ -1,0 +1,33 @@
+---
+output: 
+  html_document:
+    self_contained: false
+    includes:
+      after_body: hypothesis_doc_suffix.html
+---
+# reviewr hypothesis demo
+> This html demo page supports adding comments to the content. Try highlighing some text (even this line) to add your own!
+
+This page was generated using [R markdown](http://rmarkdown.rstudio.com/) and the [hypothesis client](https://github.com/hypothesis/client).  Notes you add to this page are public by default.
+
+Source files for this page available [here](https://github.com/markdly/reviewr)
+
+## Adding comments to code, tables and plots
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Comments can be added to tables and code.
+
+```{r cars}
+summary(cars)
+```
+
+Embedded plots can't be commented on directly. Annotate the surrounding text instead.
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+

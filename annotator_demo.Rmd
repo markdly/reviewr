@@ -1,0 +1,63 @@
+---
+output: 
+  html_document:
+    self_contained: false
+    includes:
+      in_header: annotator_header.html
+      before_body: annotator_doc_prefix.html
+      after_body: annotator_doc_suffix.html
+---
+# reviewr annotator demo
+> This html demo page supports adding comments to the content. Try highlighing some text (even this line) to add your own!
+
+This page was generated using [R markdown](http://rmarkdown.rstudio.com/) and [annotatorjs](http://annotatorjs.org/).  Notes you add to this page are temporary but it should be possible to make a version that saves notes by setting up [storage](http://docs.annotatorjs.org/en/v1.2.x/storage.html) and modifying the [R markdown source files](https://github.com/markdly/reviewr). 
+
+The following image is from a sample page where a comment was added.
+
+<br>
+![](demo.png)
+<br>
+
+On the sample page where the image was taken, the following javascript was run in the chrome developer console: 
+```
+function view_note(my_note) {
+  note_details = my_note.text + "\n" +
+    my_note.quote  + "\n" +
+    my_note.ranges[0].start  + "\n" +
+    my_note.ranges[0].end  + "\n" +
+    my_note.ranges[0].startOffset  + "\n" +
+    my_note.ranges[0].endOffset;
+  console.log(note_details);
+};
+
+view_note(jQuery("#mycontent").data('annotator').viewer.annotations[0]);
+```
+And this was the output:
+```
+// 2,508 kilometres long according to Wikipedia
+// longest
+// /p
+// /p
+// 29
+// 36
+```
+
+## Adding comments to code, tables and plots
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Comments can be added to tables and code.
+
+```{r cars}
+summary(cars)
+```
+
+Embedded plots can't be commented on directly. Annotate the surrounding text instead.
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+

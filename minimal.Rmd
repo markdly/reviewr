@@ -1,0 +1,14 @@
+---
+output: html_document
+---
+
+# reviewr minimal example
+> This html demo page supports adding comments to the content. Try highlighing some text (even this line) to add your own!
+
+This page was created using a standalone [R markdown](http://rmarkdown.rstudio.com) (.Rmd) document.   
+
+Just add `<script src="https://hypothes.is/embed.js" async></script>` to the bottom of the .Rmd file to enable commenting functionality. See the [hypothesis client](https://github.com/hypothesis/client) for more details.   Notes you add to this page are public by default.  
+
+Source files for this page available [here](https://github.com/markdly/reviewr)  
+
+<script src="https://hypothes.is/embed.js" async></script>

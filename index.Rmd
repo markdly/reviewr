@@ -1,0 +1,23 @@
+---
+output: html_document
+---
+
+# reviewr
+### `R markdown -> html -> add some comments`
+
+<br>
+![](demo.png)
+<br>
+
+This site contains a demonstration of html rendered [R markdown](http://rmarkdown.rstudio.com/) (.Rmd) files which you can add comments to in the browser! 
+
+Only one line added to the bottom of your .Rmd file is needed to add commenting functionality. Try it out with the [minimal example](minimal.html).
+
+Or check out the slightly bigger [Annotator](annotator_demo.html) and [Hypothesis](hypothesis_demo.html) demo pages.
+
+The Annotator demo page uses [annotator js](http://annotatorjs.org/). It doesn't save annotations but shows one way the contents of an annotation can be extracted using javascript.
+
+The minimal example and the hypothesis demo both use the [hypothesis client](https://github.com/hypothesis/client). By default comments are publicly stored but these demo pages don't yet contain a way to extract annotation contents directly.
+
+Source files available at https://github.com/markdly/reviewr.
+

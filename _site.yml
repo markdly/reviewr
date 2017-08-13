@@ -1,0 +1,17 @@
+name: "reviewr"
+output_dir: "docs"
+navbar:
+  title: "reviewr"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Minimal example"
+      href: minimal.html
+    - text: "Annotator demo"
+      href: annotator_demo.html
+    - text: "Hypothesis client demo"
+      href: hypothesis_demo.html
+output:
+  html_document:
+    theme: flatly
+    highlight: tango
