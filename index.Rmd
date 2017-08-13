@@ -17,7 +17,7 @@ Or check out the slightly bigger [Annotator](annotator_demo.html) and [Hypothesi
 
 The Annotator demo page uses [annotator js](http://annotatorjs.org/). It doesn't save annotations but shows one way the contents of an annotation can be extracted using javascript.
 
-The minimal example and the hypothesis demo both use the [hypothesis client](https://github.com/hypothesis/client). By default comments are publicly stored but these demo pages don't yet contain a way to extract annotation contents directly.
+The minimal example and the hypothesis demo both use the [hypothesis client](https://github.com/hypothesis/client). An account is required to add comments, which are public by default.  These demo pages also don't yet contain a way to extract annotation contents directly.
 
 Source files available at https://github.com/markdly/reviewr.
 
